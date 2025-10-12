@@ -1,13 +1,6 @@
 \documentclass[10pt, letterpaper]{article}
 
-\usepackage[
-    ignoreheadfoot,
-    top=1 cm,
-    bottom=2 cm,
-    left=2 cm,
-    right=2 cm,
-    footskip=1.0 cm
-]{geometry}
+\usepackage[ignoreheadfoot, top=0.5cm, bottom=0.5cm, left=1.5cm, right=1.5cm]{geometry}
 \usepackage{titlesec}
 \usepackage{tabularx}
 \usepackage{array}
@@ -16,77 +9,30 @@
 \usepackage{enumitem}
 \usepackage{fontawesome5}
 \usepackage{amsmath}
-\usepackage[
-    pdftitle={Soham Jain's CV},
-    pdfauthor={Soham Jain},
-    pdfcreator={LaTeX with RenderCV},
-    colorlinks=true,
-    urlcolor=primaryColor
-]{hyperref}
-\usepackage[pscoord]{eso-pic}
+\usepackage[pdftitle={Soham Jain's CV}, pdfauthor={Soham Jain}, colorlinks=true, urlcolor=primaryColor]{hyperref}
 \usepackage{calc}
-\usepackage{bookmark}
-\usepackage{lastpage}
 \usepackage{changepage}
 \usepackage{paracol}
-\usepackage{ifthen}
-\usepackage{needspace}
-\usepackage{iftex}
 
-\ifPDFTeX
-    \input{glyphtounicode}
-    \pdfgentounicode=1
-    \usepackage[utf8]{inputenc}
-    \usepackage{lmodern}
-\fi
-
-\AtBeginEnvironment{adjustwidth}{\partopsep0pt}
 \pagestyle{empty}
 \setcounter{secnumdepth}{0}
 \setlength{\parindent}{0pt}
 \setlength{\topskip}{0pt}
-\setlength{\columnsep}{0cm}
+\setlength{\columnsep}{0.15cm}
 
-\makeatletter
-\let\ps@customFooterStyle\ps@plain
-\patchcmd{\ps@customFooterStyle}{\thepage}{
-    \color{gray}\textit{\small Soham Jain - Page \thepage{} of \pageref*{LastPage}}
-}{}{}
-\makeatother
-\pagestyle{customFooterStyle}
-
-\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
-
-\titlespacing{\section}{-1pt}{0.3 cm}{0.2 cm}
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{0pt}{0.15cm}{0.1cm}
 
 \renewcommand\labelitemi{$\circ$}
 
 \newenvironment{highlights}{
-    \begin{itemize}[
-        topsep=0.10 cm,
-        parsep=0.10 cm,
-        partopsep=0pt,
-        itemsep=0pt,
-        leftmargin=0.4 cm + 10pt
-    ]
-}{
-    \end{itemize}
-}
-
-\newenvironment{highlightsforbulletentries}{
-    \begin{itemize}[
-        topsep=0.10 cm,
-        parsep=0.10 cm,
-        partopsep=0pt,
-        itemsep=0pt,
-        leftmargin=10pt
-    ]
+    \begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=0.4cm]
 }{
     \end{itemize}
 }
 
 \newenvironment{onecolentry}{
-    \begin{adjustwidth}{0.2 cm + 0.00001 cm}{0.2 cm + 0.00001 cm}
+    \begin{adjustwidth}{0.15cm}{0.15cm}
 }{
     \end{adjustwidth}
 }
@@ -94,7 +40,7 @@
 \newenvironment{twocolentry}[2][]{
     \onecolentry
     \def\secondColumn{#2}
-    \setcolumnwidth{\fill, 4.5 cm}
+    \setcolumnwidth{\fill, 4cm}
     \begin{paracol}{2}
 }{
     \switchcolumn \raggedleft \secondColumn
@@ -103,13 +49,13 @@
 }
 
 \newenvironment{header}{
-    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.5}
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.3}
 }{
     \par\kern\topsep
 }
 
 \let\hrefWithoutArrow\href
-\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{#2}}
 
 \begin{document}
     \newcommand{\AND}{\unskip
@@ -120,183 +66,156 @@
     \sbox\ANDbox{}
 
     \begin{header}
-        \textbf{\fontsize{24 pt}{24 pt}\selectfont Soham Jain}
+        \textbf{\fontsize{20pt}{20pt}\selectfont Soham Jain}
         
-        \vspace{0.3 cm}
+        \vspace{0.15cm}
         
         \normalsize
-        \mbox{\hrefWithoutArrow{mailto:jainsoham01@gmail.com}{\color{black}{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}jainsoham01@gmail.com}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{tel:+1-240-728-8946}{\color{black}{\footnotesize\faPhone*}\hspace*{0.13cm}(240) 728-8946}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://sjain2025.github.io}{\color{black}{\footnotesize\faLink}\hspace*{0.13cm}sjain2025.github.io}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/soham-jain1/}{\color{black}{\footnotesize\faLinkedinIn}\hspace*{0.13cm}soham-jain1}}%
-        \kern 0.25 cm%
-        \AND%
-        \kern 0.25 cm%
-        \mbox{\hrefWithoutArrow{https://github.com/sjain2025}{\color{black}{\footnotesize\faGithub}\hspace*{0.13cm}sjain2025}}%
+        \mbox{\hrefWithoutArrow{mailto:jainsoham01@gmail.com}{\footnotesize\faEnvelope[regular] jainsoham01@gmail.com}}
+        \kern 0.2cm
+        \mbox{\hrefWithoutArrow{tel:+1-240-728-8946}{\footnotesize\faPhone* (240) 728-8946}}
+        \kern 0.2cm
+        \mbox{\hrefWithoutArrow{https://sjain2025.github.io}{\footnotesize\faLink\ sjain2025.github.io}}
+        \kern 0.2cm
+        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/soham-jain1/}{\footnotesize\faLinkedinIn\ soham-jain1}}
+        \kern 0.2cm
+        \mbox{\hrefWithoutArrow{https://github.com/sjain2025}{\footnotesize\faGithub\ sjain2025}}
     \end{header}
 
-    \vspace{0.3 cm}
-
-    \section{Welcome to RenderCV!}
-
-    \begin{onecolentry}
-        \href{https://rendercv.com}{RenderCV} is a LaTeX-based CV/resume version-control and maintenance app. It allows you to create a high-quality CV or resume as a PDF file from a YAML file, with \textbf{Markdown syntax support} and \textbf{complete control over the LaTeX code}.
-    \end{onecolentry}
-
-    \vspace{0.2 cm}
-
-    \begin{onecolentry}
-        The boilerplate content was inspired by \href{https://github.com/dnl-blkv/mcdowell-cv}{Gayle McDowell}.
-    \end{onecolentry}
-
-    \section{Quick Guide}
-
-    \begin{onecolentry}
-        \begin{highlightsforbulletentries}
-            \item Each section title is arbitrary and each section contains a list of entries.
-            \item There are 7 unique entry types: \textit{BulletEntry}, \textit{TextEntry}, \textit{EducationEntry}, \textit{ExperienceEntry}, \textit{NormalEntry}, \textit{PublicationEntry}, and \textit{OneLineEntry}.
-            \item Select a section title, pick an entry type, and start writing your section!
-            \item \href{https://docs.rendercv.com/user_guide/}{Here}, you can find a comprehensive user guide for RenderCV.
-        \end{highlightsforbulletentries}
-    \end{onecolentry}
+    \vspace{0.1cm}
 
     \section{Education}
 
-    \begin{twocolentry}{\textit{Sept 2000 – May 2005}}
-        \textbf{University of Pennsylvania}
+    \begin{twocolentry}{\textit{Pittsburgh, PA \\ Aug 2024 -- May 2028}}
+        \textbf{Carnegie Mellon University}
         
-        \textit{BS in Computer Science}
+        \textit{B.S. in Computer Science, School of Computer Science}
     \end{twocolentry}
 
-    \vspace{0.10 cm}
-    
-    \begin{onecolentry}
-        \begin{highlights}
-            \item GPA: 3.9/4.0 (\href{https://example.com}{a link to somewhere})
-            \item \textbf{Coursework:} Computer Architecture, Comparison of Learning Algorithms, Computational Theory
-        \end{highlights}
-    \end{onecolentry}
+    \vspace{0.05cm}
+
+    \begin{twocolentry}{\textit{Alexandria, VA \\ Aug 2020 -- June 2024}}
+        \textbf{Thomas Jefferson High School for Science and Technology}
+        
+        \textit{4.0/4.0 Unweighted GPA, 4.535 Weighted GPA}
+    \end{twocolentry}
 
     \section{Experience}
 
-    \begin{twocolentry}{\textit{Cupertino, CA \\ June 2005 – Aug 2007}}
-        \textbf{Software Engineer}
-        
-        \textit{Apple}
+    \begin{twocolentry}{\textit{May 2022 -- June 2025}}
+        \textbf{Machine Learning and Software Engineer} | \textit{Vytal.AI}
     \end{twocolentry}
 
-    \vspace{0.10 cm}
-    
+    \vspace{0.05cm}
     \begin{onecolentry}
         \begin{highlights}
-            \item Reduced time to render user buddy lists by 75\% by implementing a prediction algorithm
-            \item Integrated iChat with Spotlight Search by creating a tool to extract metadata from saved chat transcripts and provide metadata to a system-wide search database
-            \item Redesigned chat file format and implemented backward compatibility for search
+            \item Developed NeurOS, a smartphone AI application quantifying brain health using novel gaze-tracking algorithms
+            \item Designed scalable business model, securing \$1.2M in seed investments (\$12.5M valuation)
         \end{highlights}
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.1cm}
 
-    \begin{twocolentry}{\textit{Redmond, WA \\ June 2003 – Aug 2003}}
-        \textbf{Software Engineer Intern}
-        
-        \textit{Microsoft}
+    \begin{twocolentry}{\textit{April 2024 -- June 2025}}
+        \textbf{Computer Science and Quantum Computing Researcher} | \textit{Virginia Tech}
     \end{twocolentry}
 
-    \vspace{0.10 cm}
-    
+    \vspace{0.05cm}
     \begin{onecolentry}
         \begin{highlights}
-            \item Designed a UI for the VS open file switcher (Ctrl-Tab) and extended it to tool windows
-            \item Created a service to provide gradient across VS and VS add-ins, optimizing its performance via caching
-            \item Built an app to compute the similarity of all methods in a codebase, reducing the time from $\mathcal{O}(n^2)$ to $\mathcal{O}(n \log n)$
-            \item Created a test case generation tool that creates random XML docs from XML Schema
-            \item Automated the extraction and processing of large datasets from legacy systems using SQL and Perl scripts
+            \item Led undergraduate research team with Dr. Atul Mantri on graph coloring with Grover's Algorithm
+            \item Conducted literature reviews to identify gaps in contemporary quantum computing research
         \end{highlights}
     \end{onecolentry}
-
-    \section{Publications}
-
-    \begin{samepage}
-        \begin{twocolentry}{Jan 2004}
-            \textbf{3D Finite Element Analysis of No-Insulation Coils}
-            
-            \vspace{0.10 cm}
-            
-            \mbox{Frodo Baggins}, \mbox{\textbf{\textit{Soham Jain}}}, \mbox{Samwise Gamgee}
-        \end{twocolentry}
-
-        \vspace{0.10 cm}
-
-        \begin{onecolentry}
-            \href{https://doi.org/10.1109/TASC.2023.3340648}{10.1109/TASC.2023.3340648}
-        \end{onecolentry}
-    \end{samepage}
 
     \section{Projects}
 
-    \begin{twocolentry}{\textit{\href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}}}
-        \textbf{Multi-User Drawing Tool}
+    \begin{twocolentry}{\textit{June 2022 -- Present}}
+        \textbf{RoutineRemind} | \textit{Congressional App Challenge Winner}
     \end{twocolentry}
 
-    \vspace{0.10 cm}
-    
+    \vspace{0.05cm}
     \begin{onecolentry}
         \begin{highlights}
-            \item Developed an electronic classroom where multiple users can simultaneously view and draw on a "chalkboard" with each person's edits synchronized
-            \item Tools Used: C++, MFC
+            \item Developed provisional patented scheduling app for individuals with speech and cognitive disabilities
+            \item Deployed on Google Play and App Store; selected by U.S. Representative Jennifer Wexton
         \end{highlights}
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.1cm}
 
-    \begin{twocolentry}{\textit{\href{https://github.com/sinaatalay/rendercv}{github.com/name/repo}}}
-        \textbf{Synchronized Desktop Calendar}
+    \begin{twocolentry}{\textit{August 2023 -- Present}}
+        \textbf{EyeLS} | \textit{IEEE Technical Excellence Award (3/400+ projects)}
     \end{twocolentry}
 
-    \vspace{0.10 cm}
-    
+    \vspace{0.05cm}
     \begin{onecolentry}
         \begin{highlights}
-            \item Developed a desktop calendar with globally shared and synchronized calendars, allowing users to schedule meetings with other users
-            \item Tools Used: C\#, .NET, SQL, XML
+            \item Built gaze-tracking web app for ALS patients using Kalman Filtering and Monte Carlo algorithms
         \end{highlights}
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.1cm}
 
-    \begin{twocolentry}{\textit{2002}}
-        \textbf{Custom Operating System}
+    \begin{twocolentry}{\textit{February 2022 -- Present}}
+        \textbf{President \& Co-Founder} | \textit{Youth International Digambar Jain Organization}
     \end{twocolentry}
 
-    \vspace{0.10 cm}
-    
+    \vspace{0.05cm}
     \begin{onecolentry}
         \begin{highlights}
-            \item Built a UNIX-style OS with a scheduler, file system, text editor, and calculator
-            \item Tools Used: C
+            \item Raised over \$25,000 for constructing a Jain temple in Virginia; manage organization website
         \end{highlights}
     \end{onecolentry}
 
-    \section{Technologies}
+    \section{Research \& Publications}
 
     \begin{onecolentry}
-        \textbf{Languages:} C++, C, Java, Objective-C, C\#, SQL, JavaScript
+        \textbf{LapseNet: A Hybrid CNN-LSTM Approach for Vision-Based Fall Detection} | \textit{IEEE Conference}
+        
+        First-author publication. Best Presentation Award at 6th International Conference on Robotics and Computer Vision
     \end{onecolentry}
 
-    \vspace{0.2 cm}
+    \vspace{0.1cm}
 
     \begin{onecolentry}
-        \textbf{Technologies:} .NET, Microsoft SQL Server, XCode, Interface Builder
+        \textbf{RexDash: Dashboard for Replica Exchange Molecular Dynamics Simulations} | \textit{JSSR}
+        
+        First-author publication with Dr. Christopher Lockhart at George Mason University
+    \end{onecolentry}
+
+    \vspace{0.1cm}
+
+    \begin{onecolentry}
+        \textbf{Transformer-Based ALS Diagnosis via EEG Analysis} | \textit{IEEE ICACTE}
+        
+        First-author paper on diagnosing ALS in two minutes. Oral presentation at 17th International Conference
+    \end{onecolentry}
+
+    \vspace{0.1cm}
+
+    \begin{onecolentry}
+        \textbf{ConVox: Deep Learning for Voice Disorder Detection} | \textit{IEEE IC-BAIE}
+        
+        First-author paper. Multilingual voice disorder detection model accepted at 5th International Conference
+    \end{onecolentry}
+
+    \section{Honors \& Awards}
+
+    \begin{onecolentry}
+        \textbf{Congressional App Challenge Winner} (VA-10) | \textbf{Meta Hacker Cup Round 2 Qualifier} (Top 10\% of 20,000+) | \textbf{5x Devpost Hackathon Winner} | \textbf{IEEE Technical Excellence Award} | \textbf{IEEE Best Presentation Award}
+    \end{onecolentry}
+
+    \section{Technical Skills}
+
+    \begin{onecolentry}
+        \textbf{Languages:} Python, Java, JavaScript, TypeScript, C++, C, SQL, R, MATLAB, HTML/CSS
+    \end{onecolentry}
+
+    \vspace{0.05cm}
+
+    \begin{onecolentry}
+        \textbf{Frameworks \& Tools:} React, React Native, Node.js, MongoDB, Firebase, TensorFlow, PyTorch, Keras, Scikit-learn, Pandas, Git, Google Cloud
     \end{onecolentry}
 
 \end{document}
