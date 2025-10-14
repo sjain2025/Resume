@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 OCT 2025 15:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 OCT 2025 15:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -703,30 +703,34 @@ Package rerunfilecheck Warning: File `resume.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `resume.out':
-(rerunfilecheck)             Before: 39A63A6DECD317A707AD874883FF9603;562
-(rerunfilecheck)             After:  01BAC0E1D448F046584157AC94E24FC4;690.
+(rerunfilecheck)             Before: 01BAC0E1D448F046584157AC94E24FC4;690
+(rerunfilecheck)             After:  39A63A6DECD317A707AD874883FF9603;562.
  ) 
 Here is how much of TeX's memory you used:
- 15465 strings out of 473190
- 262780 string characters out of 5715801
- 685468 words of memory out of 5000000
- 38525 multiletter control sequences out of 15000+600000
+ 15466 strings out of 473190
+ 262792 string characters out of 5715801
+ 682468 words of memory out of 5000000
+ 38526 multiletter control sequences out of 15000+600000
  629770 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,5n,79p,315b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
-me5Brands-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fo
-ntawesome5/FontAwesome5Free-Regular.pfb></usr/local/texlive/2025/texmf-dist/fon
-ts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/202
-5/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/local
-/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb><
-/usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPr
-o-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmsy10.pfb>
-Output written on resume.pdf (1 page, 210338 bytes).
+
+pdfTeX warning (dest): name{section*.6} has been referenced but does not exist,
+ replaced by a fixed one
+
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome
+5Brands-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/font
+awesome5/FontAwesome5Free-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts
+/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/2025/
+texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/local/t
+exlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb></u
+sr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-
+Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb>
+Output written on resume.pdf (1 page, 209799 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 63 compressed objects within 1 object stream
+ 84 PDF objects out of 1000 (max. 8388607)
+ 66 compressed objects within 1 object stream
  8 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
