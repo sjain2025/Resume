@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 OCT 2025 01:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 OCT 2025 01:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -593,14 +593,14 @@ LaTeX Font Info:    ... okay on input line 63.
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(42.67912pt, 528.93675pt, 42.67912pt)
+* h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
 * v-part:(T,H,B)=(22.76228pt, 757.98134pt, 14.22636pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
-* \textwidth=528.93675pt
+* \textwidth=557.38951pt
 * \textheight=757.98134pt
-* \oddsidemargin=-29.59087pt
-* \evensidemargin=-29.59087pt
+* \oddsidemargin=-43.81725pt
+* \evensidemargin=-43.81725pt
 * \topmargin=-86.5077pt
 * \headheight=12.0pt
 * \headsep=25.0pt
@@ -716,7 +716,7 @@ ts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/202
 /usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPr
 o-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb>
-Output written on resume.pdf (1 page, 210925 bytes).
+Output written on resume.pdf (1 page, 210860 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
