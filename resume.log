@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  13 OCT 2025 18:28
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 OCT 2025 01:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -640,48 +640,48 @@ Package hyperref Info: Link coloring ON on input line 63.
 
 \ANDbox=\box66
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 72.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 73.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 72.
+(Font)              scaled to size 10.0pt on input line 73.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 72.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 73.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 20.0pt on input line 72.
+(Font)              scaled to size 20.0pt on input line 73.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 76.
+(Font)              `T1/SourceSansPro-TLF/regular/n' on input line 77.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 9.0pt on input line 76.
+(Font)              scaled to size 9.0pt on input line 77.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
-nput line 77.
+nput line 78.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome5/ufontawesomefree2.fd
 )
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree1 on i
-nput line 79.
+nput line 80.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome5/ufontawesomefree1.fd
 )
 LaTeX Font Info:    Trying to load font information for U+fontawesomebrands0 on
- input line 83.
+ input line 84.
 
 (/usr/local/texlive/2025/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.
 fd)
 LaTeX Font Info:    Font shape `U/fontawesomebrands0/solid/n' in size <9> not a
 vailable
 (Font)              Font shape `U/fontawesomebrands0/regular/n' tried instead o
-n input line 83.
+n input line 84.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 90.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 91.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 90.
+(Font)              scaled to size 12.0pt on input line 91.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 94.
+(Font)              `T1/SourceSansPro-TLF/bold/n' on input line 95.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 11.0pt on input line 94.
+(Font)              scaled to size 11.0pt on input line 95.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 96.
+(Font)              `T1/SourceSansPro-TLF/regular/it' on input line 97.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
-(Font)              scaled to size 10.0pt on input line 96.
+(Font)              scaled to size 10.0pt on input line 97.
 
 
 [1
@@ -716,7 +716,7 @@ ts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/202
 /usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPr
 o-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb>
-Output written on resume.pdf (1 page, 211013 bytes).
+Output written on resume.pdf (1 page, 210925 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
