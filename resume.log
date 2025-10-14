@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 OCT 2025 01:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 OCT 2025 15:51
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -696,14 +696,21 @@ l/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: 01BAC0E1D448F046584157AC94E24FC4;690.
+
+
+Package rerunfilecheck Warning: File `resume.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `resume.out':
+(rerunfilecheck)             Before: 39A63A6DECD317A707AD874883FF9603;562
+(rerunfilecheck)             After:  01BAC0E1D448F046584157AC94E24FC4;690.
  ) 
 Here is how much of TeX's memory you used:
- 15466 strings out of 473190
- 262792 string characters out of 5715801
- 684468 words of memory out of 5000000
- 38526 multiletter control sequences out of 15000+600000
+ 15465 strings out of 473190
+ 262780 string characters out of 5715801
+ 685468 words of memory out of 5000000
+ 38525 multiletter control sequences out of 15000+600000
  629770 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,5n,79p,315b,447s stack positions out of 10000i,1000n,20000p,200000b,200000s
@@ -716,10 +723,10 @@ ts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/202
 /usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPr
 o-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb>
-Output written on resume.pdf (1 page, 210860 bytes).
+Output written on resume.pdf (1 page, 210338 bytes).
 PDF statistics:
- 84 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 81 PDF objects out of 1000 (max. 8388607)
+ 63 compressed objects within 1 object stream
  8 named destinations out of 1000 (max. 500000)
- 49 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
