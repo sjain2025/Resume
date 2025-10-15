@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 OCT 2025 23:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  14 OCT 2025 23:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -594,14 +594,14 @@ LaTeX Font Info:    ... okay on input line 65.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
-* v-part:(T,H,B)=(22.76228pt, 757.98134pt, 14.22636pt)
+* v-part:(T,H,B)=(17.07182pt, 763.6718pt, 14.22636pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=557.38951pt
-* \textheight=757.98134pt
+* \textheight=763.6718pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-86.5077pt
+* \topmargin=-92.19817pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=0.0pt
@@ -646,7 +646,7 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
 (Font)              `T1/SourceSansPro-TLF/bold/n' on input line 75.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 16.0pt on input line 75.
+(Font)              scaled to size 18.0pt on input line 75.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
 nput line 80.
 
@@ -694,7 +694,7 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Here is how much of TeX's memory you used:
  15444 strings out of 473190
  262468 string characters out of 5715801
- 688247 words of memory out of 5000000
+ 692246 words of memory out of 5000000
  38514 multiletter control sequences out of 15000+600000
  608118 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -708,7 +708,7 @@ ts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/202
 /usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPr
 o-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb>
-Output written on resume.pdf (1 page, 214355 bytes).
+Output written on resume.pdf (1 page, 214893 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  66 compressed objects within 1 object stream
