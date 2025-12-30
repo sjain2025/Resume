@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  19 DEC 2025 21:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  30 DEC 2025 00:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -594,14 +594,14 @@ LaTeX Font Info:    ... okay on input line 65.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
-* v-part:(T,H,B)=(19.91684pt, 760.82678pt, 14.22636pt)
+* v-part:(T,H,B)=(25.6073pt, 755.13632pt, 14.22636pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=557.38951pt
-* \textheight=760.82678pt
+* \textheight=755.13632pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-89.35315pt
+* \topmargin=-83.66269pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=0.0pt
@@ -646,7 +646,7 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
 (Font)              `T1/SourceSansPro-TLF/bold/n' on input line 74.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 19.0pt on input line 74.
+(Font)              scaled to size 23.0pt on input line 74.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
 nput line 79.
 
@@ -669,11 +669,20 @@ n input line 85.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
 (Font)              `T1/SourceSansPro-TLF/bold/n' on input line 92.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 92.
+(Font)              scaled to size 13.0pt on input line 92.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/it' aliased to
 (Font)              `T1/SourceSansPro-TLF/regular/it' on input line 98.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
 (Font)              scaled to size 10.0pt on input line 98.
+
+Overfull \hbox (0.58278pt too wide) in paragraph at lines 212--213
+[]\T1/SourceSansPro-TLF/regular/n/10 Designed a lightweight neu-ral net-work wi
+th \T1/SourceSansPro-TLF/bold/n/10 Ten-sor-Flow \T1/SourceSansPro-TLF/regular/n
+/10 and \T1/SourceSansPro-TLF/bold/n/10 Keras \T1/SourceSansPro-TLF/regular/n/1
+0 to de-tect in-door falls with \T1/SourceSansPro-TLF/bold/n/10 99%+ ac-cu-racy
+ across four datasets\T1/SourceSansPro-TLF/regular/n/10 . 
+ []
+
 
 
 [1
@@ -694,11 +703,11 @@ Package rerunfilecheck Info: File `resume.out' has not changed.
 Here is how much of TeX's memory you used:
  15442 strings out of 473190
  262446 string characters out of 5715801
- 697250 words of memory out of 5000000
+ 694279 words of memory out of 5000000
  38513 multiletter control sequences out of 15000+600000
  608118 words of font info for 52 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,5n,79p,317b,449s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,5n,79p,318b,449s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
 me5Brands-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fo
 ntawesome5/FontAwesome5Free-Regular.pfb></usr/local/texlive/2025/texmf-dist/fon
@@ -708,7 +717,7 @@ ts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/202
 /usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPr
 o-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmsy10.pfb>
-Output written on resume.pdf (1 page, 216570 bytes).
+Output written on resume.pdf (1 page, 216545 bytes).
 PDF statistics:
  80 PDF objects out of 1000 (max. 8388607)
  62 compressed objects within 1 object stream
