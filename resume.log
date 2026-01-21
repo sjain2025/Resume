@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  21 JAN 2026 11:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025) (preloaded format=pdflatex 2025.3.8)  21 JAN 2026 13:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -594,14 +594,14 @@ LaTeX Font Info:    ... okay on input line 72.
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(28.45274pt, 557.38951pt, 28.45274pt)
-* v-part:(T,H,B)=(25.6073pt, 755.13632pt, 14.22636pt)
+* v-part:(T,H,B)=(19.91684pt, 760.82678pt, 14.22636pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=557.38951pt
-* \textheight=755.13632pt
+* \textheight=760.82678pt
 * \oddsidemargin=-43.81725pt
 * \evensidemargin=-43.81725pt
-* \topmargin=-83.66269pt
+* \topmargin=-89.35315pt
 * \headheight=12.0pt
 * \headsep=25.0pt
 * \topskip=0.0pt
@@ -646,7 +646,7 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
 (Font)              `T1/SourceSansPro-TLF/bold/n' on input line 81.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 20.0pt on input line 81.
+(Font)              scaled to size 21.0pt on input line 81.
 LaTeX Font Info:    Trying to load font information for U+fontawesomefree2 on i
 nput line 85.
 
@@ -681,33 +681,12 @@ LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/it' will be
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/m/n' aliased to
 (Font)              `T1/SourceSansPro-TLF/regular/n' on input line 108.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/regular/n' will be
-(Font)              scaled to size 10.5pt on input line 108.
-LaTeX Font Info:    Calculating math sizes for size <10.5> on input line 109.
-
-
-LaTeX Font Warning: Font shape `OT1/cmr/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 109.
-
-
-LaTeX Font Warning: Font shape `OML/cmm/m/it' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 109.
-
-
-LaTeX Font Warning: Font shape `OMS/cmsy/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 109.
-
-
-LaTeX Font Warning: Font shape `OMX/cmex/m/n' in size <10.5> not available
-(Font)              size <10.95> substituted on input line 109.
-
+(Font)              scaled to size 10.3pt on input line 108.
+LaTeX Font Info:    Calculating math sizes for size <10.3> on input line 109.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/n' aliased to
 (Font)              `T1/SourceSansPro-TLF/bold/n' on input line 109.
 LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/n' will be
-(Font)              scaled to size 10.5pt on input line 109.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/b/it' aliased to
-(Font)              `T1/SourceSansPro-TLF/bold/it' on input line 242.
-LaTeX Font Info:    Font shape `T1/SourceSansPro-TLF/bold/it' will be
-(Font)              scaled to size 10.0pt on input line 242.
+(Font)              scaled to size 10.3pt on input line 109.
 
 
 [1
@@ -722,20 +701,15 @@ l/texlive/2025/texmf-dist/fonts/enc/dvips/fontawesome5/fa5free1.enc}{/usr/local
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Font Warning: Size substitutions with differences
-(Font)              up to 0.45pt have occurred.
-
 Package rerunfilecheck Info: File `resume.out' has not changed.
-(rerunfilecheck)             Checksum: BC9DAC4C658E51997BDDC3309D312322;590.
+(rerunfilecheck)             Checksum: 39A63A6DECD317A707AD874883FF9603;562.
  ) 
 Here is how much of TeX's memory you used:
- 15472 strings out of 473190
- 263133 string characters out of 5715801
- 690297 words of memory out of 5000000
- 38538 multiletter control sequences out of 15000+600000
- 647019 words of font info for 66 fonts, out of 8000000 for 9000
+ 15463 strings out of 473190
+ 262912 string characters out of 5715801
+ 692298 words of memory out of 5000000
+ 38532 multiletter control sequences out of 15000+600000
+ 637179 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  75i,5n,79p,317b,449s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/fontawesome5/FontAweso
@@ -743,15 +717,14 @@ me5Brands-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/fo
 ntawesome5/FontAwesome5Free-Regular.pfb></usr/local/texlive/2025/texmf-dist/fon
 ts/type1/public/fontawesome5/FontAwesome5Free-Solid.pfb></usr/local/texlive/202
 5/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-Bold.pfb></usr/local
-/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-BoldIt.p
-fb></usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSa
-nsPro-It.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspr
-o/SourceSansPro-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb>
-Output written on resume.pdf (1 page, 264305 bytes).
+/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPro-It.pfb><
+/usr/local/texlive/2025/texmf-dist/fonts/type1/adobe/sourcesanspro/SourceSansPr
+o-Regular.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy10.pfb>
+Output written on resume.pdf (1 page, 215335 bytes).
 PDF statistics:
- 85 PDF objects out of 1000 (max. 8388607)
- 65 compressed objects within 1 object stream
+ 80 PDF objects out of 1000 (max. 8388607)
+ 62 compressed objects within 1 object stream
  7 named destinations out of 1000 (max. 500000)
  41 words of extra memory for PDF output out of 10000 (max. 10000000)
 
