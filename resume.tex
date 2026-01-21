@@ -25,12 +25,19 @@
 \setlength{\topskip}{0pt}
 \setlength{\columnsep}{0.15cm}
 
+% Prevent words from being cut off
+\sloppy
+\setlength{\emergencystretch}{3em}
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+
 \titleformat{\section}{\bfseries\fontsize{13pt}{15.6pt}\selectfont}{}{0pt}{}[\vspace{1pt}\titlerule]
 \titlespacing{\section}{0pt}{0.15cm}{0.1cm}
 
 \renewcommand\labelitemi{$\bullet$}
 
 \newenvironment{highlights}{
+    \fontsize{10.5pt}{12.6pt}\selectfont
     \begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=0.6cm]
 }{
     \end{itemize}
@@ -71,9 +78,8 @@
     \sbox\ANDbox{}
 
     \begin{header}
-        \textbf{\fontsize{23pt}{23pt}\selectfont Soham Jain}
+        \textbf{\fontsize{20pt}{20pt}\selectfont Soham Jain}
         
-        \vspace{0.05cm}
         
         \normalsize
         \mbox{\hrefWithoutArrow{tel:+1-240-728-8946}{\color{black}\faPhone*\kern 0.10cm (240) 728-8946}}
@@ -92,7 +98,7 @@
     \section{Education}
     \vspace{0.1cm}
 
-    \begin{twocolentry}{\textbf{May 2027} \\ \textit{Pittsburgh, PA}}
+    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont May 2027} \\ \textit{Pittsburgh, PA}}
         \textbf{\fontsize{11pt}{13pt}\selectfont Carnegie Mellon University}
         
         \textit{B.S. in Computer Science; Minor in Machine Learning}
@@ -100,7 +106,7 @@
     \vspace{-0.05cm}
     \begin{onecolentry}
         \begin{highlights}
-            \item \textbf{Relevant Courses:} Data Structures and Algorithms, Computer Systems, Functional Programming, Discrete Math, Linear Algebra, Multivariable Calculus, Artificial Intelligence, Machine Learning, Computer Vision, Mobile and Web Application Development
+            \item \textbf{Relevant Courses:} Data Structures and Algorithms, Computer Systems, Functional Programming, Discrete Math, Linear Algebra, Multivariable Calculus, Artificial Intelligence, Machine Learning, Computer Vision, Mobile and Web App Development
         \end{highlights}
     \end{onecolentry}
 
@@ -118,7 +124,7 @@
     \end{onecolentry}
     \vspace{-0.1cm}
     \begin{onecolentry}
-        \textbf{Libraries \& Frameworks:} React, Vite, Express, Node.js, Next.js, Flask, NumPy, Pandas, TensorFlow, PyTorch, Keras, OpenCV
+        \textbf{Libraries \& Frameworks:} React, Vite, Express, Django, Node.js, Next.js, Flask, NumPy, Pandas, TensorFlow, PyTorch, Keras, OpenCV
     \end{onecolentry}
 
     \vspace{0.05cm}
@@ -126,7 +132,7 @@
     \section{Work Experience}
     \vspace{0.1cm}
 
-    \begin{twocolentry}{\textbf{Aug 2025 -- Present} \\ \textit{Pittsburgh, PA}}
+    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont Aug 2025 -- Present} \\ \textit{Pittsburgh, PA}}
         \textbf{\fontsize{11pt}{13pt}\selectfont ScottyLabs}
 
         \textit{\fontsize{10pt}{10pt}\selectfont Software Engineer}
@@ -135,13 +141,13 @@
     \begin{onecolentry}
         \begin{highlights}
             \item Utilizing \textbf{React, TypeScript}, and \textbf{Railway} to integrate live data from CMU Dining Services into an app that streamlines menus and specials for \textbf{10,000+ monthly users}.
-            \item Leading the integration of a geospatial routing system with \textbf{Rust} and \textbf{REST APIs} to sort campus dining locations by walking distance.
+            \item Leading the implementation of a geospatial routing system with \textbf{Rust} and \textbf{REST APIs} to sort campus dining locations by walking distance.
         \end{highlights}
     \end{onecolentry}
 
     \vspace{0.05cm}
 
-    \begin{twocolentry}{\textbf{May 2022 -- Dec 2024} \\ \textit{Alexandria, VA}}
+    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont May 2022 -- Dec 2024} \\ \textit{Alexandria, VA}}
         \textbf{\fontsize{11pt}{13pt}\selectfont Vytal.AI}
 
         \textit{\fontsize{10pt}{10pt}\selectfont Software Developer, Machine Learning Engineer}
@@ -156,8 +162,8 @@
 
     \vspace{0.05cm}
 
-    \begin{twocolentry}{\textbf{April 2024 -- May 2025} \\ \textit{Blacksburg, VA}}
-        \textbf{\fontsize{11pt}{13pt}\selectfont Virginia Polytechnic Institute}
+    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont April 2024 -- May 2025} \\ \textit{Blacksburg, VA}}
+        \textbf{\fontsize{11pt}{13pt}\selectfont Virginia Tech}
         
         \textit{\fontsize{10pt}{10pt}\selectfont Computer Science Research Intern}
     \end{twocolentry}
@@ -173,7 +179,7 @@
     \section{Projects}
     \vspace{0.1cm}
 
-    \begin{twocolentry}{\textbf{June 2022 -- Present}}
+    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont June 2022 -- Present}}
         \textbf{\fontsize{11pt}{13pt}\selectfont RoutineRemind}
     \end{twocolentry}
     \vspace{-0.05cm}
@@ -181,13 +187,13 @@
         \begin{highlights}
             \item Developing a \textbf{patent-pending} app with \textbf{JavaScript, HTML}, and \textbf{Firebase} to create personalized schedules for children with autism.
             \item Scaling product to \textbf{200+ active users} through clinical partnerships and integration in local schools.
-            \item Selected \textbf{first place in the Congressional App Challenge (top 4\%)}; demoed app at Capitol Hill.
+            \item Selected \textbf{first place in the Congressional App Challenge}; demoed app at Capitol Hill.
         \end{highlights}
     \end{onecolentry}
 
     \vspace{0.05cm}
     
-    \begin{twocolentry}{\textbf{Aug 2023 -- Sep 2025}}
+    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont Aug 2023 -- Sep 2025}}
         \textbf{\fontsize{11pt}{13pt}\selectfont EyeLS}
     \end{twocolentry}
     \vspace{-0.05cm}
@@ -202,7 +208,7 @@
     \section{Research \& Publications}
     \vspace{0.1cm}
 
-    \begin{twocolentry}{\textbf{Feb 2025}}
+    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont Feb 2025}}
         \textbf{\fontsize{11pt}{13pt}\selectfont A Transformer-Based Approach to Diagnose ALS via EEG Analysis} \\
         \textit{17th International Conference on Advanced Computer Theory and Engineering}
     \end{twocolentry}
@@ -210,7 +216,7 @@
 
     \vspace{0.05cm}
 
-    \begin{twocolentry}{\textbf{Nov 2024}}
+    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont Nov 2024}}
         \textbf{\fontsize{11pt}{13pt}\selectfont LapseNet: Hybrid CNN-LSTM Approach for Accurate \& Efficient Vision-Based Fall Detection} \\
         \textit{6th International Conference on Robotics and Computer Vision}
     \end{twocolentry}
@@ -223,15 +229,15 @@
 
     \vspace{0.05cm}
 
-    \begin{twocolentry}{\textbf{Aug 2024}}
+    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont Aug 2024}}
         \textbf{\fontsize{11pt}{13pt}\selectfont ConVox: A Deep Learning Approach for Accurate Multilingual Voice Disorder Detection} \\
         \textit{5th International Conference on Big Data, Artificial Intelligence and Internet of Things Engineering}
     \end{twocolentry}
     \vspace{-0.05cm}
 
     \vspace{0.05cm}
-    
-    \begin{twocolentry}{\textbf{Oct 2023}}
+
+    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont Oct 2023}}
         \textbf{\fontsize{11pt}{13pt}\selectfont RexDash: A Dashboard for Analyzing Replica Exchange Molecular Dynamics Simulations} \\
         \textit{Journal of Student-Scientists' Research (\textbf{George Mason University Computer Science Internship})}
     \end{twocolentry}
