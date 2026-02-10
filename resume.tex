@@ -1,255 +1,220 @@
-\documentclass[10pt, letterpaper]{article}
+\documentclass[letterpaper,11pt]{article}
 
-\usepackage[ignoreheadfoot, top=0.7cm, bottom=0.5cm, left=1.0cm, right=1.0cm]{geometry}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
 \usepackage{titlesec}
-\usepackage{tabularx}
-\usepackage{array}
-\usepackage{calc}
-\usepackage{changepage}
-\usepackage{paracol}
-
-\usepackage[dvipsnames]{xcolor}
-\definecolor{primaryColor}{RGB}{0, 79, 144}
-\usepackage{sourcesanspro}
-\renewcommand{\familydefault}{\sfdefault}
-
-\usepackage{fontawesome5}
-\usepackage{amsmath}
-\usepackage[pdftitle={Soham Jain Resume}, pdfauthor={Soham Jain}, colorlinks=true, urlcolor=primaryColor]{hyperref}
-
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
 \usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\input{glyphtounicode}
 
-\pagestyle{empty}
-\setcounter{secnumdepth}{0}
-\setlength{\parindent}{0pt}
-\setlength{\topskip}{0pt}
-\setlength{\columnsep}{0.15cm}
 
-% Prevent words from being cut off
-\sloppy
-\setlength{\emergencystretch}{3em}
-\hyphenpenalty=10000
-\exhyphenpenalty=10000
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
 
-\titleformat{\section}{\bfseries\fontsize{13pt}{15.6pt}\selectfont}{}{0pt}{}[\vspace{1pt}\titlerule]
-\titlespacing{\section}{0pt}{0.15cm}{0.1cm}
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
 
-\renewcommand\labelitemi{$\bullet$}
 
-\newenvironment{highlights}{
-    \fontsize{10.3pt}{12.5pt}\selectfont
-    \begin{itemize}[topsep=0pt, parsep=0pt, partopsep=0pt, itemsep=0pt, leftmargin=0.6cm]
-}{
-    \end{itemize}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.6in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
 }
 
-\newenvironment{onecolentry}{
-    \begin{adjustwidth}{0cm}{0.15cm}
-}{
-    \end{adjustwidth}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
 }
 
-\newenvironment{twocolentry}[2][]{
-    \onecolentry
-    \def\secondColumn{#2}
-    \setcolumnwidth{\fill, 4cm}
-    \begin{paracol}{2}
-}{
-    \switchcolumn \raggedleft \secondColumn
-    \end{paracol}
-    \endonecolentry
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
 }
 
-\newenvironment{header}{
-    \setlength{\topsep}{0pt}\par\kern\topsep\centering\linespread{1.3}
-}{
-    \par\kern\topsep
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
 }
 
-\let\hrefWithoutArrow\href
-\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{#2}}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.00in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[rightmargin=-0.05in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
-    \newcommand{\AND}{\unskip
-        \cleaders\copy\ANDbox\hskip\wd\ANDbox
-        \ignorespaces
-    }
-    \newsavebox\ANDbox
-    \sbox\ANDbox{}
 
-    \begin{header}
-        \textbf{\fontsize{21pt}{21pt}\selectfont Soham Jain}
-        
-        
-        \normalsize
-        \mbox{\hrefWithoutArrow{tel:+1-240-728-8946}{\color{black}\faPhone*\kern 0.10cm (240) 728-8946}}
-        \kern 0.2cm
-        \mbox{\hrefWithoutArrow{mailto:jainsoham01@gmail.com}{\color{black}\faEnvelope[regular]\kern 0.10cm \underline{jainsoham01@gmail.com}}}
-        \kern 0.2cm
-        \mbox{\hrefWithoutArrow{https://sjain2025.github.io}{\color{black}\faLink\kern 0.10cm \underline{sjain2025.github.io}}}
-        \kern 0.2cm
-        \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/soham-jain1/}{\color{black}\faLinkedinIn\kern 0.10cm \underline{linkedin.com/in/soham-jain1}}}
-        \kern 0.2cm
-        \mbox{\hrefWithoutArrow{https://github.com/sjain2025}{\color{black}\faGithub\kern 0.10cm \underline{github.com/sjain2025}}}
-    \end{header}
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
 
-    \vspace{0.3cm}
+\begin{center}
+    \textbf{\Huge \scshape Soham Jain} \\ \vspace{6pt}
+    \small 240-728-8946 $|$ \href{jainsoham01@gmail.com}
+    {\underline{jainsoham01@gmail.com}} $|$ 
+    \href{https://sjain2025.github.io/}
+    {\underline{sjain2025.github.io}} $|$ 
+    \href{https://www.linkedin.com/in/soham-jain1/}
+    {\underline{linkedin.com/in/soham-jain1}} $|$
+    \href{https://github.com/sjain2025}{\underline{github.com/sjain2025}}
+\end{center}
 
-    \section{Education}
-    \vspace{0.1cm}
 
-    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont May 2027} \\ \textit{Pittsburgh, PA}}
-        \textbf{\fontsize{11pt}{13pt}\selectfont Carnegie Mellon University}
-        
-        \textit{B.S. in Computer Science; Concentration in Machine Learning}
-    \end{twocolentry}
-    \vspace{-0.05cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item \textbf{Relevant Courses:} Data Structures \& Algorithms, Computer Systems, Functional Programming, Discrete Math, Linear Algebra, Multivariable Calculus, Artificial Intelligence, Machine Learning, Computer Vision, Mobile \& Web App Development
-        \end{highlights}
-    \end{onecolentry}
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carnegie Mellon University}{May 2028}
+      {B.S. in Computer Science, Concentration in Machine Learning}{Pittsburgh, PA}
+      \resumeItemListStart
+            \resumeItem{\textbf{Relevant Courses:} Data Structures \& Algorithms, Computer Systems, Functional Programming, Discrete Math, Linear Algebra, Artificial Intelligence, Machine Learning, Computer Vision, Mobile \& Web App Development}
+  \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
-    \vspace{0.05cm}
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.00in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, Java, C, C++, JavaScript, TypeScript, C\#, SQL, HTML, CSS} \\
+     \textbf{Developer Tools}{: Git, Linux/Unix, Docker, Railway, AWS, Google Cloud Platform, Firebase, MongoDB} \\
+     \textbf{Frameworks \& Libraries}{: React, Vite, Node.js, Flask, Express, Next.js, OpenCV, NumPy, Pandas, TensorFlow, Keras} \\
+    }}
+ \end{itemize}
+ 
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
 
-    \section{Technical Skills}
-    \vspace{0.1cm}
+    \resumeSubheading
+      {Software Engineer}{Aug 2025 -- Present}
+      {ScottyLabs}{Pittsburgh, PA}
+      \resumeItemListStart
+        \resumeItem{Integrating live data from Dining Services into CMUEats using React, TypeScript, and Railway, streamlining menus and specials for 10,000+ users each month across mobile and web.}
+        \resumeItem{Leading the development of a geospatial routing system with JavaScript and REST APIs to rank dining locations by walking distance, resulting in a 30-50\% reduction in time to find dining locations.}
+        \resumeItem{Designing CI/CD workflows for 50+ developers with GitHub Actions and Docker to enforce linting and unit testing.}
+      \resumeItemListEnd
 
-    \begin{onecolentry}
-        \fontsize{10.3pt}{12.5pt}\selectfont
-        \textbf{Languages \& Operating Systems:} Python, Java, C, C++, JavaScript, HTML/CSS, TypeScript, Rust, SQL, MATLAB, Linux/Unix, macOS
-    \end{onecolentry}
-    \vspace{-0.1cm}
-    \begin{onecolentry}
-        \fontsize{10.3pt}{12.5pt}\selectfont
-        \textbf{Developer Tools:} Git, Docker, Vim, AWS, Azure, MongoDB, Google Cloud, Firebase, Android Studio, GitHub, PostgreSQL
-    \end{onecolentry}
-    \vspace{-0.1cm}
-    \begin{onecolentry}
-        \fontsize{10.3pt}{12.5pt}\selectfont
-        \textbf{Libraries \& Frameworks:} React, Vite, Express, Django, Node.js, Next.js, Flask, NumPy, Pandas, TensorFlow, Keras, OpenCV
-    \end{onecolentry}
+    \resumeSubheading
+      {Software Engineer}{May 2022 -- Feb 2025}
+      {Vytal.AI}{Alexandria, VA}
+      \resumeItemListStart
+        \resumeItem{Developed a mobile application that analyzes ocular biometrics using OpenCV, Next.js, and MongoDB to quantify brain health in under 30 seconds.}
+        \resumeItem{Optimized Python pipelines and deployed ML models on AWS EC2 to scale testing to 300+ clinical beta users.}
+        \resumeItem{Implemented OCR-driven PDF parsing using Agile methodologies like sprint cycles and stand-ups, decreasing the average processing time for uploaded health records by 90 seconds.}
+      \resumeItemListEnd
 
-    \vspace{0.05cm}
+    \resumeSubheading
+      {Computer Science Research Intern}{Apr 2024 -- Jan 2025}
+      {Virginia Tech}{Blacksburg, VA}
+      \resumeItemListStart
+        \resumeItem{Constructed algorithms for constraint satisfaction problems in C\# and Python to reduce computation time by up to 65\% compared to leading recursive methods.}
+        \resumeItem{Applied object-oriented architecture for graph nodes and edges to compute a valid four-coloring of the U.S. map.}
+      \resumeItemListEnd
 
-    \section{Experience}
-    \vspace{0.1cm}
+    \resumeSubheading
+      {Machine Learning Research Intern}{Jun 2023 -- Jan 2024}
+      {George Mason University}{Fairfax, VA}
+      \resumeItemListStart
+        \resumeItem{Built a web dashboard using Flask, HTML/CSS, and Matplotlib to standardized metrics for analyzing the technical performance of molecular dynamics simulations.}
+        \resumeItem{Published first-author paper in the Journal of Student-Scientists’ Research, amplifying real-world impact.}
+      \resumeItemListEnd
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+% -------------------------------------------
 
-    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont Aug 2025 -- Present} \\ \textit{Pittsburgh, PA}}
-        \textbf{\fontsize{11pt}{13pt}\selectfont ScottyLabs}
+  \resumeSubHeadingListEnd
 
-        \textit{\fontsize{10pt}{10pt}\selectfont Software Engineer}
-    \end{twocolentry}
-    \vspace{-0.05cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Utilizing \textbf{React}, \textbf{TypeScript}, and \textbf{Railway} to integrate live data from Dining Services into CMUEats, a cross-platform application that streamlines menus and specials for \textbf{10,000+ monthly users} on campus.
-            \item Leading the development of a geospatial routing system with \textbf{Rust} and \textbf{REST APIs} to sort dining locations by walking distance.
-        \end{highlights}
-    \end{onecolentry}
 
-    \vspace{0.05cm}
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{RoutineRemind}}{Jun 2022 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developing a patent-pending iOS/Android app with JavaScript, HTML, and Firebase that uses audio classification and natural language processing to help children with autism personalize daily schedules.}
+            \resumeItem{Implementing secure user authentication with Firebase to manage over 200 active student and caregiver accounts.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{EyeLS}}{Aug 2023 -- Sep 2025}
+          \resumeItemListStart
+            \resumeItem{Constructed an eye-tracking application with OpenCV and TensorFlow to map eye movements to click locations with 92\% calibration accuracy, enabling patients with ALS to communicate non-verbally.}
+            \resumeItem{Granted the IEEE Technical Excellence Award for innovating a cost-effective alternative to \$15,000+ AAC devices.}
+          \resumeItemListEnd
+        \resumeProjectHeading
+          {\textbf{LapseNet}}{Mar 2024 -- Dec 2024}
+          \resumeItemListStart
+            \resumeItem{Deployed a Python and SQL video data pipeline to train a deep learning system for real-time fall detection, achieving a 99\%+ classification accuracy in training and testing.}
+            \resumeItem{Recognized with the Best Presentation Award at the 6th International Conference on Robotics and Computer Vision.}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
 
-    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont May 2022 -- Oct 2024} \\ \textit{Alexandria, VA}}
-        \textbf{\fontsize{11pt}{13pt}\selectfont Vytal.AI}
 
-        \textit{\fontsize{10pt}{10pt}\selectfont Software Developer and Machine Learning Engineer}
-    \end{twocolentry}
-    \vspace{-0.05cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Used \textbf{Tailwind}, \textbf{Next.js}, and \textbf{MongoDB} to implement a quantitative brain health assessment app at a Venture Capital-backed startup, bringing in \textbf{\$1.3M+ in investments} and a \textbf{\$12.5M valuation}.
-            \item Optimized \textbf{Python} biometric pipelines and deployed ML models on \textbf{AWS EC2} to scale testing to \textbf{300+ clinical beta users}.
-        \end{highlights}
-    \end{onecolentry}
 
-    \vspace{0.05cm}
+%
 
-    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont April 2024 -- May 2025} \\ \textit{Blacksburg, VA}}
-        \textbf{\fontsize{11pt}{13pt}\selectfont Virginia Tech Computer Science Department}
-        
-        \textit{\fontsize{10pt}{10pt}\selectfont Research Intern}
-    \end{twocolentry}
-    \vspace{-0.05cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Designed a quantum-classical hybrid algorithm with \textbf{Python} and \textbf{MATLAB} to address graph coloring and other boolean satisfiability (SAT) problems, \textbf{reducing computation costs by up to 65\%} compared to leading models.
-        \end{highlights}
-    \end{onecolentry}
-
-    \vspace{0.05cm}
-
-    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont June 2023 -- Mar 2024} \\ \textit{Fairfax, VA}}
-        \textbf{\fontsize{11pt}{13pt}\selectfont George Mason University Machine Learning Lab}
-        
-        \textit{\fontsize{10pt}{10pt}\selectfont Research Intern}
-    \end{twocolentry}
-    \vspace{-0.05cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Built the first \textbf{Flask} and \textbf{HTML} dashboard to standardize metrics for analyzing molecular dynamics simulations’ performance.
-            \item \textbf{First author publication} with Dr. Christopher Lockhart in Journal of Student-Scientists' Research.
-        \end{highlights}
-    \end{onecolentry}
-
-    \vspace{0.05cm}
-
-    \section{Projects}
-    \vspace{0.1cm}
-
-    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont June 2022 -- Present}}
-        \textbf{\fontsize{11pt}{13pt}\selectfont RoutineRemind} | \textit{React, JavaScript, TypeScript, Python, HTML/CSS, Firebase }
-    \end{twocolentry}
-    \vspace{-0.05cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Developing a \textbf{patent-pending} app with \textbf{JavaScript}, \textbf{HTML}, and \textbf{Firebase} that uses audio classification and natural language processing to enable children with autism to create personalized daily schedules.
-            \item Scaling product to \textbf{200+ active users} through clinical partnerships and integration in local schools.
-            \item Selected \textbf{first place in the Congressional App Challenge}; demoed app to Representatives and Senators at Capitol Hill.
-        \end{highlights}
-    \end{onecolentry}
-
-    \vspace{0.05cm}
-    
-    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont Aug 2023 -- Sep 2025}}
-        \textbf{\fontsize{11pt}{13pt}\selectfont EyeLS} | \textit{JavaScript, HTML/CSS, Python, TensorFlow, OpenCV }
-    \end{twocolentry}
-    \vspace{-0.05cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Constructed an eye-tracking application with \textbf{OpenCV}, \textbf{JavaScript}, and \textbf{HTML/CSS} that maps eye movements to click locations with \textbf{92\% calibration accuracy}, enabling patients with ALS to communicate nonverbally while \textbf{saving \$15,000+ annually}.
-            \item Granted research stipend and \textbf{Technical Excellence Award} from IEEE (top 3 out of 300+ projects).
-        \end{highlights}
-    \end{onecolentry}
-
-    \vspace{0.05cm}
-    \section{Research \& Publications}
-    \vspace{0.1cm}
-
-    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont Feb 2025}}
-        \textbf{\fontsize{11pt}{13pt}\selectfont A Transformer-Based Approach to Diagnose ALS via EEG Analysis} \\
-        \textit{17th International Conference on Advanced Computer Theory and Engineering}
-    \end{twocolentry}
-    \vspace{-0.05cm}
-
-    \vspace{0.05cm}
-
-    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont Nov 2024}}
-        \textbf{\fontsize{11pt}{13pt}\selectfont LapseNet: Hybrid CNN-LSTM Approach for Accurate \& Efficient Vision-Based Fall Detection} \\
-        \textit{6th International Conference on Robotics and Computer Vision}
-    \end{twocolentry}
-    \vspace{-0.05cm}
-    \begin{onecolentry}
-        \begin{highlights}
-            \item Recognized with \textbf{IEEE Best Presentation Award} (top 1.5\% of 500+ participants).
-        \end{highlights}
-    \end{onecolentry}
-
-    \vspace{0.05cm}
-
-    \begin{twocolentry}{\textbf{\fontsize{11pt}{13pt}\selectfont Aug 2024}}
-        \textbf{\fontsize{11pt}{13pt}\selectfont ConVox: A Deep Learning Approach for Accurate Multilingual Voice Disorder Detection} \\
-        \textit{5th International Conference on Big Data, Artificial Intelligence and Internet of Things Engineering}
-    \end{twocolentry}
-    \vspace{-0.05cm}
+%-------------------------------------------
 \end{document}
